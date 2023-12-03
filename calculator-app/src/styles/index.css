@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --background-color-primary: rgb(130, 93, 208);
+  --background-color-secondary: rgb(192, 127, 231, 1);
+  --secondary-color: #f95252;
+  --font-color: #fff;
+}
+
+body {
+  background: var(--background-color-primary);
+  background: linear-gradient(
+    90deg,
+    var(--background-color-primary) 35%,
+    var(--background-color-secondary) 100%
+  );
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  background-color: #3d3956;
+  border-radius: 0.7em;
+  width: 43em;
+  height: 48em;
+  box-shadow: 0 0 0.5em #3d3956;
+  display: flex;
+  flex-direction: column;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 2em;
+}
+
+nav button {
+  padding: 1em 2em;
+  color: #fff;
+  background-color: transparent;
+  text-transform: uppercase;
+  border-radius: 2em;
+  letter-spacing: 0.1em;
+  border-color: transparent;
+}
+
+nav button.active {
+  background-color: var(--secondary-color);
+}
+
+nav button:hover {
+  background-color: var(--secondary-color);
+}
+
+nav .nav_main {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 1em 2em;
+}
+
+nav .nav__main button:not(:first-child) {
+  margin-left: 1.5em;
+}
+
+nav .nav__actions button {
+  background-color: #2c2f38dd;
+  font-weight: bold;
+}
+
+nav .nav__actions button:hover {
+  background-color: #fff;
+  color: #2c2f38dd;
+}
+
+section.calculator__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: end;
+  padding: 3em 4em;
+  color: #fff;
+}
+
+section.calculator__info .calculator__info__history {
+  font-size: 1.5em;
+  color: rgb(255 255 255 / 0.4);
+}
+
+section.calculator__info .calculator__info__result {
+  font-size: 2.5em;
+  margin-top: 0.6em;
+}
+
+section.calculator__actions {
+  flex: 1;
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  background-color: #2c2f38;
+  border-radius: 0 0 0.7em 0.7em;
+}
+
+section.calculator__actions div {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  height: 4.9em;
+}
+
+section.calculator__actions button {
+  background-color: transparent;
+  border-color: transparent;
+  color: var(--font-color);
+  font-size: 1.3em;
+}
+
+section.calculator__actions button.opaque {
+  color: rgb(255 255 255 / 0.4);
+}
+
+section.calculator__actions button.equal {
+  background-color: var(--secondary-color);
+  border-radius: 0 0 0.4em 0;
+}

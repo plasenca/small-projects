@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://unpkg.com/sanitize.css" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles/index.css">
+  <title>Calculator App</title>
+</head>
+
+<body>
+  <main>
+    <nav>
+      <div class="nav__main">
+        <button class="active" type="button">Standard</button>
+        <button type="button">Scientific</button>
+        <button type="button">Converter</button>
+      </div>
+      <div class="nav__actions">
+        <button type="button">History</button>
+      </div>
+    </nav>
+    <section class="calculator__info">
+      <div class="calculator__info__history">
+        <span id="calculator__prev__data">2 + 2</span>
+      </div>
+      <div class="calculator__info__result">
+        <span id="calculator__actual__data">4</span>
+      </div>
+    </section>
+    <section class="calculator__actions">
+      <div class="tuple_1">
+        <button class="tuple_1_1">C</button>
+        <button class="tuple_1_2 opaque">←</button>
+        <button class="tuple_1_3 opaque">()</button>
+        <button class="tuple_1_4 opaque">%</button>
+        <button class="tuple_1_5 opaque">π</button>
+      </div>
+      <div class="tuple_2">
+        <button class="tuple_1_1 opaque">sin</button>
+        <button class="tuple_1_2 opaque">√x</button>
+        <button class="tuple_1_3 opaque">x²</button>
+        <button class="tuple_1_4 opaque">x<sup>y</sup></button>
+        <button class="tuple_1_5 opaque">÷</button>
+      </div>
+      <div class="tuple_3">
+        <button class="tuple_1_1 opaque">cos</button>
+        <button class="tuple_1_2">7</button>
+        <button class="tuple_1_3">8</button>
+        <button class="tuple_1_4">9</button>
+        <button class="tuple_1_5 opaque">x</button>
+      </div>
+      <div class="tuple_4">
+        <button class="tuple_1_1 opaque">tan</button>
+        <button class="tuple_1_2">4</button>
+        <button class="tuple_1_3">5</button>
+        <button class="tuple_1_4">6</button>
+        <button class="tuple_1_5 opaque">-</button>
+      </div>
+      <div class="tuple_5">
+        <button class="tuple_1_1 opaque">ln</button>
+        <button class="tuple_1_2">1</button>
+        <button class="tuple_1_3">2</button>
+        <button class="tuple_1_4">3</button>
+        <button class="tuple_1_5 opaque">+</button>
+      </div>
+      <div class="tuple_6">
+        <button class="tuple_1_1 opaque">lg</button>
+        <button class="tuple_1_2 opaque">e</button>
+        <button class="tuple_1_3">0</button>
+        <button class="tuple_1_4 opaque">.</button>
+        <button class="tuple_1_5 equal">=</button>
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>
