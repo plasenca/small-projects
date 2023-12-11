@@ -11,7 +11,7 @@ export class TypeCalcOperation {
   static square = 'square';
   static power = 'power_2';
   static powerY = 'power_y';
-  static disivion = 'division';
+  static division = 'division';
   static multiplication = 'multiplication';
   static subtraction = 'subtraction';
   static addition = 'addition';
@@ -55,6 +55,10 @@ export class Operation {
     this.values = values;
   }
 
+  /**
+   * 
+   * @returns {number}
+   */
   result() {
     this.#validateLength();
 
