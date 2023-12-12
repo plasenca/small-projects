@@ -1,14 +1,16 @@
 {
   "extends": "astro/tsconfigs/strictest",
   "compilerOptions": {
-    "baseUrl": ".",
+    "baseUrl": "C:/Users/franz/Escritorio/Projects/Personal/small-projects/quiz-app-chatgpt",
     "paths": {
       "@/*": [
         "src/*"
       ],
       "@/assets/*": [
         "src/assets/*"
-      ],
-    }
+      ]
+    },
+    "jsx": "react-jsx",
+    "jsxImportSource": "react"
   }
 }
