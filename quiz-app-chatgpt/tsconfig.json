@@ -8,6 +8,12 @@
       ],
       "@/assets/*": [
         "src/assets/*"
+      ],
+      "@/components/*": [
+        "src/components/*"
+      ],
+      "@/layouts/*": [
+        "src/layouts/*"
       ]
     },
     "jsx": "react-jsx",

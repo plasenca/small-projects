@@ -1,0 +1,21 @@
+---
+import ButtonAction from "./ButtonAction.astro";
+import MainLogo from "@/assets/imgs/MainLogo.astro";
+---
+
+<nav class="sticky w-full bg-transparent px-10 flex">
+  <div class="w-36 aspect-auto">
+    <MainLogo />
+  </div>
+  <div class="flex-1"></div>
+  <ul class="hidden md:flex justify-between items-center">
+    <a href="#">
+      <li class="text-gray-500 text-base font-bold">
+        Already have an account?
+      </li>
+    </a>
+    <li>
+      <ButtonAction href="#">Login</ButtonAction>
+    </li>
+  </ul>
+</nav>
