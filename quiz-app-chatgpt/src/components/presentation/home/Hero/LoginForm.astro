@@ -1,0 +1,45 @@
+---
+import EyeOpen from "@/assets/svgs/EyeOpen.astro";
+---
+
+<form
+  class="mt-10 flex flex-col items-start justify-center gap-5 w-full"
+  action="/"
+  method="post"
+>
+  <label class="w-full flex flex-col gap-1">
+    <p class="text-gray-500 text-base">Full Name</p>
+    <input
+      class="mt-1 block w-full h-12 rounded-md border-gray-300 shadow-md border-2 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
+      type="text"
+      name="fullname"
+      id="fullname"
+    />
+  </label>
+  <label class="w-full flex flex-col gap-1">
+    <p class="text-gray-500 text-base">Email</p>
+    <input
+      class="mt-1 block w-full h-12 rounded-md border-gray-300 shadow-md border-2 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
+      type="email"
+      name="email"
+      id="email"
+    />
+  </label>
+
+  <label class="relative w-full flex flex-col gap-1">
+    <p class="text-gray-500 text-base">Password</p>
+    <div
+      class="pr-2 border-2 rounded-md shadow-md border-gray-300 text-gray-400 focus-within:text-gray-600 focus-within:border-indigo-300 focus-within:ring focus-within:ring-indigo-200 focus-within:ring-opacity-50 flex"
+    >
+      <input
+        class="border-none h-12 outline-none focus:ring-0 bg-transparent placeholder-gray-400 text-gray-500 appearance-none w-full"
+        type="password"
+        name="password"
+        id="password"
+      />
+      <button type="button">
+        <EyeOpen />
+      </button>
+    </div>
+  </label>
+</form>

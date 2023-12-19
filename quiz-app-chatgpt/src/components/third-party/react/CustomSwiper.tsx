@@ -1,30 +1,33 @@
-import Swiper from 'swiper';
-import { Navigation, Pagination } from 'swiper/modules';
+import type { ReactNode } from 'react';
 
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
+import { Swiper, SwiperSlide } from 'swiper/react';
 
-// init Swiper:
-const swiper = new Swiper('.swiper', {
-  // configure Swiper to use modules
-  modules: [Navigation, Pagination],
-});
+import QuestionImage from "@/assets/svgs/QuestionImage.astro";
+import QuestionThreeMonster from "@/assets/svgs/QuestionThreeMonster.astro";
+import AnswerOnePerson from "@/assets/svgs/AnswerOnePerson.astro";
+import { EffectCoverflow, Pagination } from 'swiper/modules';
 
-export default function CustomSwiper(){
+interface CustomSwiperProps{
+  children?: ReactNode;
+}
+
+export default function CustomSwiper({ children }: CustomSwiperProps){
+
   return (
-  <div className="swiper">
-    <div className="swiper-wrapper">
-      <div className="swiper-slide">Slide 1</div>
-      <div className="swiper-slide">Slide 2</div>
-      <div className="swiper-slide">Slide 3</div>
-    </div>
-    <div className="swiper-pagination"></div>
-
-    <div className="swiper-button-prev"></div>
-    <div className="swiper-button-next"></div>
-
-    <div className="swiper-scrollbar"></div>
-  </div>
-);
+    <Swiper 
+    modules={[EffectCoverflow, Pagination]}
+      autoplay
+      loop
+    >
+      <SwiperSlide>
+        <QuestionImage/>
+      </SwiperSlide>
+      <SwiperSlide>
+        <QuestionThreeMonster/>
+      </SwiperSlide>
+      <SwiperSlide>
+        <AnswerOnePerson/>
+      </SwiperSlide>
+    </Swiper>
+  );
 }
