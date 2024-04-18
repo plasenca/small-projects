@@ -3,7 +3,7 @@
 // import QuestionThreeMonster from "@/assets/svgs/QuestionThreeMonster.astro";
 // import AnswerOnePerson from "@/assets/svgs/AnswerOnePerson.astro";
 
-import CustomSwiper from "@/components/third-party/react/CustomSwiper.tsx";
+import HeroSwiper from "@/components/third-party/react/HeroSwiper";
 
 interface Props {
   title: string;
@@ -14,8 +14,8 @@ const { title, subtitle } = Astro.props;
 ---
 
 <main class="grid grid-cols-1 lg:grid-cols-2 gap-4">
-  <section class="flex justify-center items-center">
-    <CustomSwiper client:only="react" />
+  <section class="">
+    <HeroSwiper client:only="react" />
   </section>
   <section class="flex flex-col justify-center items-start">
     <h1 class="text-4xl font-bold text-[#283641]">{title}</h1>
