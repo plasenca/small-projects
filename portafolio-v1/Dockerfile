@@ -2,11 +2,8 @@ FROM nginx:1.9.14-alpine
 
 COPY . /usr/share/nginx/html
 
-USER root
-
-RUN chown -R nginx:nginx /usr/share/nginx/html
-
-USER nginx
+RUN chown -R nginx:nginx /usr/share/nginx/html && \
+  chmod -R 755 /usr/share/nginx/html
 
 EXPOSE 80
 
